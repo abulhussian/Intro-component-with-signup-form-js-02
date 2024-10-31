@@ -80,12 +80,20 @@ form.addEventListener("submit", function (e) {
   checkFunction2(emailValue);
   checkFunction3(passwordValue);
 
-  alert(`
-    First Name :${fnameValue}
-    Last Name:${lnameValue}
-    Email:${emailValue}
-    password:${passwordValue}`);
-  window.location.reload();
+  if (
+    fnameValue !== "" &&
+    lname !== "" &&
+    emailValue !== "" &&
+    passwordValue !== ""
+  ) {
+    alert(`
+      First Name :${fnameValue}
+      Last Name:${lnameValue}
+      Email:${emailValue}
+      password:${passwordValue}`);
+    window.location.reload();
+  }
+
   //   if (
   //     fnameValue === "" ||
   //     lnameValue === "" ||
