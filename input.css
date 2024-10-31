@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply border-Red;
+}
+.email-active {
+  @apply border-Red text-Red;
+}
